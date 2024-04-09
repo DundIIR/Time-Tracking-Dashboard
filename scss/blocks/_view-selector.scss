@@ -1,0 +1,29 @@
+.view-selector {
+	padding: 1.25rem 2rem;
+	display: flex;
+	justify-content: space-between;
+
+	@include mediaDesktop {
+		flex-direction: column;
+		padding: 1.5rem 2rem;
+	}
+}
+
+.view-selector__item {
+	font-size: 14px;
+	color: $blue-200;
+	cursor: pointer;
+
+	&:hover,
+	&--active {
+		color: white;
+	}
+
+	@include mediaDesktop {
+		font-size: 15px;
+
+		&:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+	}
+}

@@ -1,0 +1,49 @@
+.info-card {
+	background-color: $blue-500;
+	border-radius: $radii;
+
+	padding: 2rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+
+	@include mediaDesktop {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-grow: 1;
+	}
+}
+
+.info-card__text {
+	padding: 0.5rem 0;
+}
+
+.info-card__image {
+	width: 4rem;
+	height: 4rem;
+	border: 3px solid white;
+	border-radius: $radii-full;
+
+	@include mediaDesktop {
+		margin-bottom: 1rem;
+	}
+}
+
+.info-card__title {
+	font-weight: $weight-light;
+	margin: 0.5rem 0 0;
+	font-size: 24px;
+
+	@include mediaDesktop {
+		font-size: 32px;
+	}
+}
+
+.info-card__subtitle {
+	font-weight: $weight-light;
+	margin: 0;
+	font-size: 12px;
+}

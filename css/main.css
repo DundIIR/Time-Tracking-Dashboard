@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(226, 43%, 10%);
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.dashboard {
+  min-height: 100vh;
+  padding: 4rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard__content {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+  justify-content: center;
+  grid-template-columns: repeat(1, minmax(300px, 330px));
+}
+@media screen and (min-width: 1024px) {
+  .dashboard__content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.dashboard__person {
+  width: 100%;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 1rem;
+}
+@media screen and (min-width: 1024px) {
+  .dashboard__person {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.dashboard__item {
+  width: 100%;
+  display: flex;
+  padding-top: 2.15rem;
+  background-color: white;
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-position: 92% -8%;
+}
+.dashboard__item--work {
+  background-color: hsl(15, 100%, 70%);
+  background-image: url("/images/icon-work.svg");
+}
+.dashboard__item--play {
+  background-color: hsl(195, 74%, 62%);
+  background-image: url("/images/icon-play.svg");
+}
+.dashboard__item--study {
+  background-color: hsl(348, 100%, 68%);
+  background-image: url("/images/icon-study.svg");
+}
+.dashboard__item--exercise {
+  background-color: hsl(145, 58%, 55%);
+  background-image: url("/images/icon-exercise.svg");
+}
+.dashboard__item--social {
+  background-color: hsl(264, 64%, 52%);
+  background-image: url("/images/icon-social.svg");
+}
+.dashboard__item--self-care {
+  background-color: hsl(43, 84%, 65%);
+  background-image: url("/images/icon-self-care.svg");
+}
+
+.info-card {
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+@media screen and (min-width: 1024px) {
+  .info-card {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
+}
+
+.info-card__text {
+  padding: 0.5rem 0;
+}
+
+.info-card__image {
+  width: 4rem;
+  height: 4rem;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+@media screen and (min-width: 1024px) {
+  .info-card__image {
+    margin-bottom: 1rem;
+  }
+}
+
+.info-card__title {
+  font-weight: 300;
+  margin: 0.5rem 0 0;
+  font-size: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .info-card__title {
+    font-size: 32px;
+  }
+}
+
+.info-card__subtitle {
+  font-weight: 300;
+  margin: 0;
+  font-size: 12px;
+}
+
+.view-selector {
+  padding: 1.25rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1024px) {
+  .view-selector {
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+  }
+}
+
+.view-selector__item {
+  font-size: 14px;
+  color: hsl(236, 100%, 87%);
+  cursor: pointer;
+}
+.view-selector__item:hover, .view-selector__item--active {
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  .view-selector__item {
+    font-size: 15px;
+  }
+  .view-selector__item:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.tracking-card {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  flex-grow: 1;
+  position: relative;
+  bottom: -2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dashboard__item:hover .tracking-card {
+  background-color: hsl(246, 80%, 60%);
+}
+
+.tracking-card__body, .tracking-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tracking-card__header {
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 1024px) {
+  .tracking-card__header {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.tracking-card__title {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+}
+
+.tracking-card__menu {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .tracking-card__body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.tracking-card__time {
+  font-size: 32px;
+  font-weight: 300;
+}
+@media screen and (min-width: 1024px) {
+  .tracking-card__time {
+    margin-bottom: 0.5rem;
+    font-size: 42px;
+  }
+}
+
+.tracking-card__prev-time {
+  font-size: 12px;
+  font-weight: 300;
+  color: hsl(236, 100%, 87%);
+}/*# sourceMappingURL=main.css.map */

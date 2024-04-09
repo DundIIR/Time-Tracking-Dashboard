@@ -1,0 +1,65 @@
+.tracking-card {
+	background-color: $blue-800;
+	border-radius: $radii;
+	padding: 1.25rem;
+	flex-grow: 1;
+	position: relative;
+	bottom: -2px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	.dashboard__item:hover & {
+		background-color: $blue-500;
+	}
+}
+
+%positionElements {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tracking-card__header {
+	@extend %positionElements;
+	margin-bottom: 1rem;
+
+	@include mediaDesktop {
+		margin-bottom: 0.5rem;
+	}
+}
+
+.tracking-card__title {
+	font-weight: $weight-bold;
+	font-size: $fs-base;
+	margin: 0;
+}
+
+.tracking-card__menu {
+	cursor: pointer;
+}
+
+.tracking-card__body {
+	@extend %positionElements;
+
+	@include mediaDesktop {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+.tracking-card__time {
+	font-size: 32px;
+	font-weight: $weight-light;
+
+	@include mediaDesktop {
+		margin-bottom: 0.5rem;
+		font-size: 42px;
+	}
+}
+
+.tracking-card__prev-time {
+	font-size: 12px;
+	font-weight: $weight-light;
+	color: $blue-200;
+}
