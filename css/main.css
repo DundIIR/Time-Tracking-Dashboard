@@ -60,27 +60,27 @@ body {
 }
 .dashboard__item--work {
   background-color: hsl(15, 100%, 70%);
-  background-image: url("/images/icon-work.svg");
+  background-image: url("../../images/icon-work.svg");
 }
 .dashboard__item--play {
   background-color: hsl(195, 74%, 62%);
-  background-image: url("/images/icon-play.svg");
+  background-image: url("../../images/icon-play.svg");
 }
 .dashboard__item--study {
   background-color: hsl(348, 100%, 68%);
-  background-image: url("/images/icon-study.svg");
+  background-image: url("../../images/icon-study.svg");
 }
 .dashboard__item--exercise {
   background-color: hsl(145, 58%, 55%);
-  background-image: url("/images/icon-exercise.svg");
+  background-image: url("../../images/icon-exercise.svg");
 }
 .dashboard__item--social {
   background-color: hsl(264, 64%, 52%);
-  background-image: url("/images/icon-social.svg");
+  background-image: url("../../images/icon-social.svg");
 }
 .dashboard__item--self-care {
   background-color: hsl(43, 84%, 65%);
-  background-image: url("/images/icon-self-care.svg");
+  background-image: url("../../images/icon-self-care.svg");
 }
 
 .info-card {
