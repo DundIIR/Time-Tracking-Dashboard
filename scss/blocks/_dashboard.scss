@@ -51,27 +51,27 @@
 
 	&--work {
 		background-color: $red-100;
-		background-image: url('../../images/icon-work.svg');
+		background-image: url('../images/icon-work.svg');
 	}
 
 	&--play {
 		background-color: $blue-100;
-		background-image: url('../../images/icon-play.svg');
+		background-image: url('../images/icon-play.svg');
 	}
 	&--study {
 		background-color: $red-200;
-		background-image: url('../../images/icon-study.svg');
+		background-image: url('../images/icon-study.svg');
 	}
 	&--exercise {
 		background-color: $green-100;
-		background-image: url('../../images/icon-exercise.svg');
+		background-image: url('../images/icon-exercise.svg');
 	}
 	&--social {
 		background-color: $violet-100;
-		background-image: url('../../images/icon-social.svg');
+		background-image: url('../images/icon-social.svg');
 	}
 	&--self-care {
 		background-color: $orange-100;
-		background-image: url('../../images/icon-self-care.svg');
+		background-image: url('../images/icon-self-care.svg');
 	}
 }
