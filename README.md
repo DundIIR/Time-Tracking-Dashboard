@@ -1,6 +1,6 @@
 # Frontend Mentor - Доска для отслеживания времени в различных активностях
 
-Это решение [Time Dashboard Challenge наставнике Frontend](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw).
+Эта задача от [наставнике Frontend - Time Dashboard Challenge](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw).
 
 ## Челлендж
 
